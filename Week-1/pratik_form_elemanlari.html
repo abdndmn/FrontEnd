@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="fname">Ad:</label>
+        <input type="text" id="fname" name="fname" required><br>
+       <label for="lname">Soyad:</label>
+       <input type="text" id="lname" name="lname" required><br>
+       <label for="email">Email:</label>
+       <input type="email" id="email" name="email" required><br>
+       <label for="password">Şifre:</label>
+       <input type="password" id="pwd" name="pwd" minlength="8" required><br>
+       <p>Cinsiyet:</p>
+       <input type="radio" id="male" name="gender" value="male" required>
+       <label for="male">Erkek</label><br>
+       <input type="radio" id="female" name="gender" value="female" required>
+       <label for="female">Kadın</label><br>
+       <label for="favfruit">Favori Meyveniz:</label><br>
+       <select id="favfruit" name="favfruit">
+       <option value="elma">Elma</option>
+       <option value="muz">Muz</option>
+       <option value="cilek">Çilek</option>
+       </select><br>
+       <textarea id="message" name="message" rows="4" cols="50" placeholder="Lütfen mesajınızı yazınız!"></textarea><br>
+       <input type="submit" value="Gönder">
+    </form>
+</body>
+</html>
