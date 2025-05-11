@@ -38,8 +38,10 @@ main {
 
 .posts {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-wrap: wrap; /* Kartların sarmalanmasını sağlar */
+    gap: 20px; /* Kartlar arası boşluk */
+    justify-content: center; /* Merkeze hizalama */
+    padding: 20px;
 }
 h2,h3,h4, .alttext{
     text-align:center;
@@ -47,13 +49,28 @@ h2,h3,h4, .alttext{
 
 
 .post-card {
+    flex: 1 1 calc(33.333% - 20px); /* 3 sütun düzeni */
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-    width: calc(auto - 20px);
+    min-width: 250px; /* Minimum genişlik */
+    max-width: 400px; /* Maksimum genişlik */
+    box-sizing: border-box;
 }
 
+
+@media (max-width: 1024px) {
+    .post-card {
+        flex: 1 1 calc(50% - 20px); /* 2 sütun düzeni */
+    }
+}
+
+@media (max-width: 768px) {
+    .post-card {
+        flex: 1 1 100%; /* Tek sütun düzeni */
+    }
+}
 .post-card h3 {
     margin-top: 0;
 }
