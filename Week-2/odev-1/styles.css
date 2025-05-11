@@ -41,13 +41,17 @@ main {
     flex-wrap: wrap;
     gap: 20px;
 }
+h2,h3,h4, .alttext{
+    text-align:center;
+}
+
 
 .post-card {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-    width: calc(50% - 20px);
+    width: calc(auto - 20px);
 }
 
 .post-card h3 {
@@ -68,6 +72,18 @@ main {
 .post-content {
     background-color: #fff;
     padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.images img{
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
