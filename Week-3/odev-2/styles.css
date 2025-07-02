@@ -1,0 +1,32 @@
+
+/* Bootstrap'e özel genel ayarlar */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+/* Başlık hizalama */
+h2, h3, h4, .alttext {
+  text-align: center;
+}
+
+/* Jumbotron benzeri alan özelleştirme */
+.jumbotron-custom {
+  background-color: #0d6efd;
+  color: white;
+  padding: 3rem 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Kartlar için görsel */
+.card-img-top {
+  max-height: 200px;
+  object-fit: cover;
+}
+
+/* Footer için padding */
+footer {
+  margin-top: 3rem;
+}
